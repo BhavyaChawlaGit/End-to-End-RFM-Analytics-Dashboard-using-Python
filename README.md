@@ -50,8 +50,19 @@ The dataset used for this analysis is `rfm_data.csv`, which includes the followi
 
 
 
-## How to Run the Code
+## Installing Dependencies
 
-python3 rfm.py
+To install the required Python packages, run the following command:
+
+```
+pip install -r requirements.txt
+```
+
+## Running the Application
+To run the application, navigate to the directory containing app.py and run the following command:
+```
+python rfm.py
+```
+
 
 Dash would run on http://127.0.0.1:8052/
