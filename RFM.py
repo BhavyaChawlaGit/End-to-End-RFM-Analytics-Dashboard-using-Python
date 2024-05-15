@@ -1,21 +1,18 @@
 import dash
 from dash import dcc, html
 from dash.dependencies import Input, Output
+from datetime import datetime
 import plotly.io as pio
-import plotly.colors as pc
-
-
 import pandas as pd
 import plotly.express as px
 import plotly.io as pio
 import plotly.graph_objects as go
+
 pio.templates.default = "plotly_white"
 
 data = pd.read_csv("rfm_data.csv")
-
 print(data.columns)
 
-from datetime import datetime, date
 
 # Convert 'PurchaseDate' to datetime
 data['PurchaseDate'] = pd.to_datetime(data['PurchaseDate'], format='%Y-%m-%d' ,errors='coerce')
@@ -62,6 +59,9 @@ data['RFM_Score'] = data['RecencyScore'] + data['FrequencyScore'] + data['Moneta
 segment_labels = ['Low-Value', 'Mid-Value', 'High-Value']
 data['Value Segment'] = pd.qcut(data['RFM_Score'], q=3, labels=segment_labels)
 
+
+
+
 # RFM Segment Distribution
 segment_counts = data['Value Segment'].value_counts().reset_index()
 segment_counts.columns = ['Value Segment', 'Count']
@@ -79,6 +79,8 @@ fig_segment_dist.update_layout(xaxis_title='RFM Value Segment',
                               showlegend=False)
 
 #fig_segment_dist.show()
+
+
 
 
 # Create a new column for RFM Customer Segments
@@ -200,14 +202,6 @@ fig.update_layout(
     showlegend=True)
 
 #fig.show()
-
-
-
-
-
-
-
-
 
 
 
