@@ -59,7 +59,7 @@ pip install -r requirements.txt
 ```
 
 ## Running the Application
-To run the application, navigate to the directory containing app.py and run the following command:
+To run the application, navigate to the directory containing rfm.py and run the following command:
 ```
 python rfm.py
 ```
