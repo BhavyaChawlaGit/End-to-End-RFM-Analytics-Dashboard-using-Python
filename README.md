@@ -20,6 +20,8 @@ The dataset used for this analysis is `rfm_data.csv`, which includes the followi
 1. **RFM Value Segment Distribution**:
    - Bar chart showing the distribution of customers across different RFM value segments (Low-Value, Mid-Value, High-Value).
 
+![RFM Value Segment Distributions](image.png)
+
 2. **Distribution of RFM Values within Customer Segment**:
    - Treemap showing customer segments (Champions, Potential Loyalists, At Risk Customers, Can't Lose, Lost) by value.
 
