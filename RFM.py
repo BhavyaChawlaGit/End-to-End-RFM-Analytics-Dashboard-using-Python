@@ -7,6 +7,7 @@ import pandas as pd
 import plotly.express as px
 import plotly.io as pio
 import plotly.graph_objects as go
+import plotly.colors
 
 pio.templates.default = "plotly_white"
 
@@ -137,7 +138,7 @@ fig_heatmap = go.Figure(data=go.Heatmap(
 fig_heatmap.update_layout(title='Correlation Matrix of RFM Values within Champions Segment')
 #fig_heatmap.show()
 
-import plotly.colors
+
 
 pastel_colors = plotly.colors.qualitative.Pastel
 
