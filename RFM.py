@@ -13,7 +13,7 @@ pio.templates.default = "plotly_white"
 
 data = pd.read_csv("rfm_data.csv")
 
-
+print(data.columns)
 
 from datetime import datetime, date
 
@@ -78,8 +78,7 @@ fig_segment_dist.update_layout(xaxis_title='RFM Value Segment',
                               yaxis_title='Count',
                               showlegend=False)
 
-# Show the figure
-fig_segment_dist.show()
+#fig_segment_dist.show()
 
 
 # Create a new column for RFM Customer Segments
@@ -106,7 +105,7 @@ fig_treemap_segment_product = px.treemap(segment_product_counts,
                                          color='Value Segment', color_discrete_sequence=px.colors.qualitative.Pastel,
                                          title='RFM Customer Segement by Value')
 
-fig_treemap_segment_product.show()
+#fig_treemap_segment_product.show()
 
 
 # Filter the data to include only the customers in the Champions segment
@@ -121,7 +120,7 @@ fig.update_layout(title='Distribution of RFM Values within Champions Segment',
                   yaxis_title='RFM Value',
                   showlegend=True)
 
-fig.show()
+#fig.show()
 
 correlation_matrix = champions_segment[['RecencyScore', 'FrequencyScore', 'MonetaryScore']].corr()
 
@@ -134,7 +133,7 @@ fig_heatmap = go.Figure(data=go.Heatmap(
                    colorbar=dict(title='Correlation')))
 
 fig_heatmap.update_layout(title='Correlation Matrix of RFM Values within Champions Segment')
-fig_heatmap.show()
+#fig_heatmap.show()
 
 import plotly.colors
 
@@ -158,7 +157,7 @@ comparison_fig.update_layout(title='Comparison of RFM Segments',
                   xaxis_title='RFM Segments',
                   yaxis_title='Number of Customers',
                   showlegend=False)
-comparison_fig.show()
+#comparison_fig.show()
 
 
 
@@ -200,7 +199,7 @@ fig.update_layout(
     barmode='group',
     showlegend=True)
 
-fig.show()
+#fig.show()
 
 
 

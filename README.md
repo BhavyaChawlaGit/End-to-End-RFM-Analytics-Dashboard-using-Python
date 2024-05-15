@@ -6,10 +6,14 @@ This repository contains code for an RFM Analysis Dashboard using Python, Dash, 
 ## Dataset
 
 The dataset used for this analysis is `rfm_data.csv`, which includes the following columns:
+
 - `CustomerID`: Unique identifier for each customer
-- `OrderID`: Unique identifier for each order
 - `PurchaseDate`: Date of the purchase
 - `TransactionAmount`: Amount spent in the transaction
+- `ProductInformation`: Details about the purchased product
+- `OrderID`: Unique identifier for each order
+- `Location`: Location of the purchase
+
 
 ## Analysis and Visualizations
 
@@ -35,3 +39,4 @@ The dataset used for this analysis is `rfm_data.csv`, which includes the followi
 
 python3 rfm.py
 
+Dash would run on http://127.0.0.1:8052/
