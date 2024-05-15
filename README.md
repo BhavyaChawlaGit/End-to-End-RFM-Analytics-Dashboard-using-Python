@@ -25,14 +25,22 @@ The dataset used for this analysis is `rfm_data.csv`, which includes the followi
 2. **Distribution of RFM Values within Customer Segment**:
    - Treemap showing customer segments (Champions, Potential Loyalists, At Risk Customers, Can't Lose, Lost) by value.
 
+![Image not available](image-1.png)
+
 3. **Correlation Matrix of RFM Values within Champions Segment**:
    - Heatmap showing the correlation matrix for Recency, Frequency, and Monetary scores within the Champions segment.
+
+![Image not available](image-2.png)
 
 4. **Comparison of RFM Segments**:
    - Bar chart comparing the number of customers in each RFM segment.
 
+![Image not available](image-3.png)
+
 5. **Comparison of RFM Segments based on Scores**:
    - Grouped bar chart comparing average Recency, Frequency, and Monetary scores across different RFM segments.
+
+![Image not available](image-4.png)
 
 
 ## How to Run the Code
