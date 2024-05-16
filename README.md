@@ -3,6 +3,10 @@
 
 This repository contains code for an RFM Analysis Dashboard using Python, Dash, and Plotly. The dashboard provides various visualizations to analyze customer segments based on RFM (Recency, Frequency, Monetary) scores.
 
+- recency (the date they made their last purchase)
+- frequency (how often they make purchases)
+- monetary value (the amount spent on purchases)
+
 ![image](https://github.com/BhavyaChawlaGit/End-to-End-RFM-Analytics-Dashboard-using-Python/assets/112718303/8129102d-1e55-4663-a62e-4fd3717a50fc)
 
 
