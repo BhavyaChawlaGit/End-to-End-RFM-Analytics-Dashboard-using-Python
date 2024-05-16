@@ -21,15 +21,15 @@ The dataset used for this analysis is `rfm_data.csv`, which includes the followi
 - `OrderID`: Unique identifier for each order
 - `Location`: Location of the purchase
 
-## Steps Taken:
+## Steps Taken
 
-- 'Import Libraries and Load Data': Import necessary libraries and load the dataset.
-- 'Data Preparation': Convert date columns to datetime and calculate recency, frequency, and monetary values.
-- 'Calculate RFM Scores': Assign scores to recency, frequency, and monetary values based on defined criteria.
-- 'RFM Segmentation': Calculate total RFM score and create customer segments.
-- 'Visualize Segment Distribution': Use visualizations to show segment distribution.
-- 'Analyze Customer Segments': Assign strategic segments and visualize their distribution.
-- 'Compare Segment Scores': Calculate and visualize average RFM scores per segment.
+- `Import Libraries and Load Data`: Import necessary libraries and load the dataset.
+- `Data Preparation`: Convert date columns to datetime and calculate recency, frequency, and monetary values.
+- `Calculate RFM Scores`: Assign scores to recency, frequency, and monetary values based on defined criteria.
+- `RFM Segmentation`: Calculate total RFM score and create customer segments.
+- `Visualize Segment Distribution`: Use visualizations to show segment distribution.
+- `Analyze Customer Segments`: Assign strategic segments and visualize their distribution.
+- `Compare Segment Scores`: Calculate and visualize average RFM scores per segment.
 
 
 ## Analysis and Visualizations
